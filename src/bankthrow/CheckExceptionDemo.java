@@ -1,4 +1,4 @@
-package exceptionHandling;
+package bankthrow;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

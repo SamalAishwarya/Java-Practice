@@ -1,5 +1,6 @@
 package bankthrow;
 
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class User {
@@ -56,9 +57,9 @@ class Account {
     interface Transaction {
         void saveUser(User user);
 
-        void depositAmount(double depositAmount);
+        void depositAmount(double depositAmount)throws InValidAmounteException;
 
-        void withdrawAmount(double withdrawAmount);
+        void withdrawAmount(double withdrawAmount) throws InsufficientBalanceException;
 
         void display();
     }
@@ -75,18 +76,18 @@ class Account {
         }
 
         @Override
-        public void depositAmount(double depositAmount) {
+        public void depositAmount(double depositAmount) throws InValidAmounteException {
             if (depositAmount <= 0) {
-                throw new ArithmeticException("Invalid Amount");
+                throw new InValidAmounteException("Invalid Amount");
             }
             balance += depositAmount;
             System.out.println("Amount after deposit " + balance);
         }
 
         @Override
-        public void withdrawAmount(double withdrawAmount) {
+        public void withdrawAmount(double withdrawAmount) throws InsufficientBalanceException {
             if (balance < withdrawAmount) {
-                throw new ArithmeticException("Insufficient Balance");
+                throw new InsufficientBalanceException("Insufficient Balance");
             }
             balance -= withdrawAmount;
             System.out.println("AMount after withraw " + balance);
@@ -136,7 +137,7 @@ class Account {
                         System.out.println("Enter amount for deposit");
                         try {
                             transaction.depositAmount(sc.nextDouble());
-                        } catch (ArithmeticException e) {
+                        } catch (InValidAmounteException e) {
                             System.out.println(e.getMessage());
                         }
                         break;
@@ -144,7 +145,7 @@ class Account {
                         System.out.println("Enter withdraw amount");
                         try {
                             transaction.withdrawAmount(sc.nextDouble());
-                        } catch (ArithmeticException e) {
+                        } catch (InsufficientBalanceException e) {
                             System.out.println(e.getMessage());
                         }
                         break;
