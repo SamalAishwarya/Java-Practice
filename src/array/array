@@ -1,0 +1,93 @@
+ Array- similar datatype store in single unit
+  syntax-
+1-  DataType[] var_name; or
+2-  DataType[] var_name;or
+3-  Datatype var_name[];
+
+ for ex- int[]a; //declaration
+
+ a{1,2,3,4,5} //initialize
+ array index start from 0 index
+  array is contiguieos memory allocation
+ run time -
+
+ main(){
+ int array[]; //declaration
+ array = new int [10];  // intatntinous
+ student s[] = new student[10];
+
+ a[0]=10;  //0 no of element
+ a[1]=20;
+ -
+ -
+ -
+ a[9]=100;
+
+ for (int i=0;i<10;i++){
+ a[i] = scanner input();
+ }
+ }
+
+
+array:-
+ an object which contains elements of a similar data type
+- stored in contiguous memory location
+- can store only a fixed set of elements in array
+- index-based, first element of the array is stored at 0th index
+- variables in the array are ordered
+
+
+Advantages:
+1. code optimization
+2. Random access
+
+Disadvantage:
+1. size limit
+
+Types of Array
+1. Single Dimensional Array
+	Syntax:
+		datatype[] var_name; OR
+		datatype []var_name; OR
+		datatype var_name[];
+
+2. Multidimensional Array
+	Syntax:
+		datatype[][] var_name; OR
+		datatype [][]var_name; OR
+		datatype var_name[][]; OR
+		datatype []var_name[];
+
+Jagged Array
+	- creating odd number of columns
+	- an array of arrays with diff no of columns
+
+
+
+
+
+Homework:
+1. Create class Employee
+	id
+	name
+	mobileNo
+	emailId
+
+	print only even index employee.Add emp data by using scanner class
+
+2.int a[] = {1,1,5,3,9,8,6,7,5,4}
+Find duplicate elements of an array & print
+
+3. Addition of 2*2 Matrix
+4. Addition of 3*3 Matrix
+
+sum of array
+reverse of array
+
+
+
+
+
+
+
+

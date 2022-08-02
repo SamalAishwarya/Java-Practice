@@ -15,17 +15,20 @@ class Student{
 6. class having more than one constructor with diff args/parameters - constructor overloading
 
 Types
-1. Default - no args - used to provide default values to the object
+1. Default - no args - used to provide default values to the object-
+- in this when we create the object the compiler create the default constructor.
 2. Parameterised - with args
 
 Rules:
 1. constructor name is same as our class name
-2. constructor should not have return type(explicitly)
+2. constructor should not have return type(explicitly) even void
 3. constructors cannot be abstract,static,final and synchronised
 4. constructors can have access modifiers(public,private,protected or default)
 
 Homework:
 1. difference between method & constructor
--Constructor is used to initialize an object whereas method is used to exhibits functionality of an object.
+-Constructor is used to initialize an object whereas
+method -is used to exhibits functionality of an object or it performs a particular tasks.
 - Constructors are invoked implicitly whereas methods are invoked explicitly.
 - Constructor does not return any value where the method may/may not return a value
+-constructer can not inherit

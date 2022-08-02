@@ -16,18 +16,20 @@ public class HomeworkLoops {
         //8. Fibbo series
         //9. Palindrome no
         //10. Armstrong no
+//        11.Swaping no.--using 3 variable
+//        without using 3rd variable
 
         //6.Reverse number
-//        int n,rev=0;
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter the no to find reverse");
-//        n = sc.nextInt();
-//        while(n>0){
-//            rev= (rev*10) + n%10;
-//            n=n/10;
-//        }
-//        System.out.println("Reverse" +rev);
-//
+        int n,rev=0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the no to find reverse");
+        n = sc.nextInt();
+        while(n>0){
+            rev= (rev*10) + n%10;
+            n=n/10;
+        }
+        System.out.println("Reverse" +rev);
+
 //
 //        //5. Factorial Number
 //        int i,fact=1;
