@@ -79,7 +79,7 @@ class Account {
         public void depositAmount(double depositAmount) throws InValidAmounteException {
             if (depositAmount <= 0) {
                 throw new InValidAmounteException("Invalid Amount");
-            }
+        }
             balance += depositAmount;
             System.out.println("Amount after deposit " + balance);
         }
