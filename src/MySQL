@@ -1,0 +1,17 @@
+//relational databases
+DECIMAL -- double
+1.show databses;
+2.Create database  - Java2June
+
+3.use Java2June;
+4.create table test(id int,name varchar(10),address varchar(25)); --  create table
+ describe test; --- description of table
+
+ insert into test values (1,'abc', 'pune'); -- values are insert in table
+
+ 5.show tables;
+ 6.describe test;
+ 7. insert into test values (1,'abc', 'pune');
+8. select * from test;
+
+difference between primery key and unique constraints
