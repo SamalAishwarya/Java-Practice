@@ -14,16 +14,39 @@ public class StringDemo {
         String str2 = new String("Pune");
         String str4 = new String("Pune");
 
-        if (str2 == str4) //check whether strings having same memory address
-            System.out.println("Both strings are equal");
-        else
-            System.out.println("Different strings");
+//        if (str2 == str4) //check whether strings having same memory address
+//            System.out.println("Both strings are equal");
+//        else
+//            System.out.println("Different strings");
+//
+//        if (str1.equals(str2))
+//            System.out.println("Equals");
+//        else
+//            System.out.println("Not Equals");
+//
+//        if  (str1.equals(str2)){
+//
+//            System.out.println("Equal");
+//        }
+//        else {
+//            System.out.println("Not equal");
+//
+//        }
+//        System.out.println(str1.compareTo(str2));
+//    }
 
-        if (str1.equals(str2))
-            System.out.println("Equals");
-        else
-            System.out.println("Not Equals");
+     if  (str1.equals(str2)){
+
+        System.out.println("Equal");
     }
+        else {
+        System.out.println("Not equal");
+
+    }
+        System.out.println(str1.equalsIgnoreCase(str2));
+}
+
+
 }
 
 //method area = statiuc variables
