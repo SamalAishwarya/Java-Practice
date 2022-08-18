@@ -26,3 +26,5 @@ public class StringDemo {
     }
 }
 
+//method area = statiuc variables
+//
