@@ -10,6 +10,7 @@ public class StringMethods {
         System.out.println("Replace: "+str.replace("in","at"));
         System.out.println("Replace All "+str.replaceAll("in","at"));
         System.out.println("Contains "+str.contains("brings"));
+//        System.out.println("Substring" +str.substring(1));
         System.out.println(str);
     }
 }
